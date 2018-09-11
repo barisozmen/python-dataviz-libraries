@@ -31,4 +31,5 @@ Here is a list of popular high level visualization libraries in Python, and blog
 * https://twitter.com/jakevdp/status/975105808861032448?lang=en
 * http://pbpython.com/python-vis-flowchart.html
 
-<img src="fig1.png" height="400" width="200">
+
+<img src="fig1.png" height="500" width="400">
