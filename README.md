@@ -33,8 +33,51 @@ Here is a list of popular high level visualization libraries in Python, and blog
 
 * https://twitter.com/jakevdp/status/975105808861032448?lang=en
 * http://pbpython.com/python-vis-flowchart.html
-* http://vid.ssdi.di.fct.unl.pt/ressources/lectures/files/IDV-09-Python%20Plotting.pdf
-    * explains plotly and bokeh well
-
 
 <img src="fig1.png" height="500" width="400">
+
+* http://vid.ssdi.di.fct.unl.pt/ressources/lectures/files/IDV-09-Python%20Plotting.pdf
+    * explains plotly and bokeh well
+ 
+
+  
+
+
+### Other
+* [Clustered Heat Maps (Double Dendrograms)](https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Clustered_Heat_Maps-Double_Dendrograms.pdf)
+
+A seaborn clustered heatmap example
+```
+import pandas as pd
+import seaborn as sns
+sns.set()
+
+# Load the brain networks example dataset
+df = sns.load_dataset("brain_networks", header=[0, 1, 2], index_col=0)
+
+# Select a subset of the networks
+used_networks = [1, 5, 6, 7, 8, 12, 13, 17]
+used_columns = (df.columns.get_level_values("network")
+                          .astype(int)
+                          .isin(used_networks))
+df = df.loc[:, used_columns]
+
+# Create a categorical palette to identify the networks
+network_pal = sns.husl_palette(8, s=.45)
+network_lut = dict(zip(map(str, used_networks), network_pal))
+
+# Convert the palette to vectors that will be drawn on the side of the matrix
+networks = df.columns.get_level_values("network")
+network_colors = pd.Series(networks, index=df.columns).map(network_lut)
+
+# Draw the full plot
+sns.clustermap(df.corr(), center=0, cmap="vlag",
+               row_colors=network_colors, col_colors=network_colors,
+               linewidths=.75, figsize=(13, 13))
+ ```
+ 
+ <img src="seaborn-heatmap-example.png" height="500" width="500">
+
+
+
+
