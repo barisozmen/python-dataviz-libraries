@@ -31,4 +31,4 @@ Here is a list of popular high level visualization libraries in Python, and blog
 * https://twitter.com/jakevdp/status/975105808861032448?lang=en
 * http://pbpython.com/python-vis-flowchart.html
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text](fig1.png?raw=true "Title")
