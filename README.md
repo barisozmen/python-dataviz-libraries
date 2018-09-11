@@ -14,6 +14,7 @@ Here is a list of popular high level visualization libraries in Python, and blog
    * relatively more difficult to understand than **altair**
    * Sponsored by [NumFocus](https://numfocus.org/)
    * Easy to use example: [selection_histogram](https://bokeh.pydata.org/en/latest/docs/gallery.html)
+   * [interactive heatmap](https://bokeh.pydata.org/en/latest/docs/gallery/les_mis.html)
    * Implemented by Pthon, outputs JSON, rendered by Javascript
 
 
