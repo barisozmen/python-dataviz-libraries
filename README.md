@@ -20,6 +20,8 @@ Here is a list of popular high level visualization libraries in Python, and blog
 * [plotly](https://plot.ly/python/)
    * more professional compare to previous two
    * [3D plots](https://plot.ly/python/3d-scatter-plots/) are impressive
+   * [heatmap transcription profiling of brain samples](https://plot.ly/ipython-notebooks/bioinformatics/)
+   * [DNA sequence slider](https://moderndata.plot.ly/bioinformatics-plots-made-in-python-and-r/)
    * compatible with R as well
 
 * [seaborn](https://seaborn.pydata.org/)
@@ -30,6 +32,8 @@ Here is a list of popular high level visualization libraries in Python, and blog
 
 * https://twitter.com/jakevdp/status/975105808861032448?lang=en
 * http://pbpython.com/python-vis-flowchart.html
+* http://vid.ssdi.di.fct.unl.pt/ressources/lectures/files/IDV-09-Python%20Plotting.pdf
+    * explains plotly and bokeh well
 
 
 <img src="fig1.png" height="500" width="400">
